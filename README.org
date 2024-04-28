@@ -1,0 +1,9 @@
+* About
+Temperature in Dhaka city, Bangladesh is rampant. A core reason is a severe lack of vegetation. Whereas a city should have 25% vegetation areas, we only have 7%.
+And the temperature is an all time high.
+[[file:res/historical_data_on_dhaka_temperature.jpg]]
+
+* Plan
+[[https://github.com/abj-paul/Mapping-Plantation-Areas-in-Bangladesh.git][We first downloaded satellite data from this open source site.]] We will now estimate ~Normalized Vegetation Index~. Thus we will find areas where we have plantation. Then we will identify areas where we can plant trees.
+
+WE ARE ACTIVELY LOOKING FOR COLLABORATION.
