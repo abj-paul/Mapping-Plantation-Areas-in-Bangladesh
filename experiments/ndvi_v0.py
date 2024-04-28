@@ -1,5 +1,7 @@
 import rasterio
 import numpy as np
+from matplotlib.colors import LinearSegmentedColormap
+
 
 def calculate_ndvi(red_band_path, nir_band_path, output_ndvi_path):
     """
@@ -27,7 +29,7 @@ def calculate_ndvi(red_band_path, nir_band_path, output_ndvi_path):
 
     # Save NDVI to a new raster file
     with rasterio.open(output_ndvi_path, 'w', **profile) as dst:
-        dst.write(ndvi, 1)
+        dst.write(ndvi*255, 1)
 
     # Calculate the percentage of total area with vegetation
     vegetation_pixels = np.count_nonzero(ndvi > 0.37036)  # Count pixels with NDVI > 0
@@ -44,3 +46,11 @@ output_ndvi_path = "output/shanir_akhra_ndvi_v0.TIF"
 # Calculate NDVI and save to a new raster file
 percentage_vegetation = calculate_ndvi(red_band_path, nir_band_path, output_ndvi_path)
 print(f"Percentage of total area with vegetation: {percentage_vegetation:.2f}%")
+
+
+
+# Path to save the output visualization image
+output_image_path = "output/shanir_akhra_ndvi_v0.png"
+
+# Visualize NDVI values and save the image
+visualize_ndvi(output_ndvi_path, output_image_path)
