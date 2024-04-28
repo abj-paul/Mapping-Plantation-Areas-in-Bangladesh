@@ -1,6 +1,9 @@
+WE ARE ACTIVELY LOOKING FOR COLLABORATION.
+
 * About
 Temperature in Dhaka city, Bangladesh is rampant. A core reason is a severe lack of vegetation. Whereas a city should have 25% vegetation areas, we only have 7%.
 And the temperature is an all time high.
+
 [[file:res/historical_data_on_dhaka_temperature.jpg]]
 
 * Plan
@@ -10,6 +13,12 @@ And the temperature is an all time high.
 #+end_src
 Note that, B4(Band 4) is the red band and B5(Band 5) is the NIR band. We will need them to calculate NDVI.
 
-We will now estimate ~Normalized Difference Vegetation Index (NDVI)~. Thus we will find areas where we have plantation. Then we will identify areas where we can plant trees.
+We will now estimate ~Normalized Difference Vegetation Index (NDVI)~. Thus we will find areas where we have plantation. Then we will identify areas where we can plant trees. We consider NDVI values > ~0.35~ as plant areas according to the chart below.
 
-WE ARE ACTIVELY LOOKING FOR COLLABORATION.
+[[file:res/NDVI-values-for-different-features.png]]
+
+We found the following vegetation index for different areas in Bangladesh.
+| Area         | Percentage of Plantation Areas |
+|--------------+--------------------------------|
+| Shanir Akhra |                          9.03% |
+
