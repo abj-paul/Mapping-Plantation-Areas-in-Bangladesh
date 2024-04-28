@@ -6,7 +6,7 @@ And the temperature is an all time high.
 
 [[file:res/historical_data_on_dhaka_temperature.jpg]]
 
-* Plan
+* Progress
 [[https://github.com/abj-paul/Mapping-Plantation-Areas-in-Bangladesh.git][We first downloaded satellite data from this open source site.]] After downloading the satellite data, extract them using:
 #+begin_src bash
   tar -xvf LC09_L2SP_137043_20240402_20240403_02_T1.tar
@@ -21,6 +21,11 @@ We found the following vegetation index for different areas in Bangladesh.
 | Area         | Percentage of Plantation Areas |
 |--------------+--------------------------------|
 | Shanir Akhra |                          9.03% |
+
+And the areas that have vegetation in Shanir Akhra are:
+[[file:res/shanir_akhra_ndvi_v0.png]]
+
+This looks like "Dholair Khal" instead of vegetation, interesting.
 
 
 We basically neet to do ~Landcover mapping~ and ~vegetation index map~, as shown in [[https://www.researchgate.net/publication/319122657_Soil_and_Water_Conservation_Prioritization_Using_Geospatial_Technology_-_a_Case_Study_of_Part_of_Subarnarekha_Basin_Jharkhand_India/figures?lo=1][this paper.]]
