@@ -23,7 +23,8 @@ We found the following vegetation index for different areas in Bangladesh.
 | Shanir Akhra |                          9.03% |
 
 And the areas that have vegetation in Shanir Akhra are:
-[[file:res/shanir_akhra_ndvi_v0.png]]
+
+[[file:res/shanir_akhra_vegetation.png]]
 
 This looks like "Dholair Khal" instead of vegetation, interesting.
 

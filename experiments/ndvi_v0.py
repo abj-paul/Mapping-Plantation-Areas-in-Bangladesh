@@ -1,7 +1,33 @@
 import rasterio
 import numpy as np
-from matplotlib.colors import LinearSegmentedColormap
+import matplotlib.pyplot as plt
 
+def visualize_ndvi(ndvi_path, output_image_path):
+    """
+    Visualize NDVI values using a green color map and save the image.
+    :param ndvi_path: Path to the NDVI raster file (TIF)
+    :param output_image_path: Path to save the output visualization image
+    """
+    # Open the NDVI raster file
+    with rasterio.open(ndvi_path) as src:
+        ndvi = src.read(1, masked=True)  # Read NDVI values
+
+    # Set up the figure
+    plt.figure(figsize=(10, 10))
+
+    # Define the colormap (green)
+    cmap = plt.cm.gist_earth
+
+    # Plot NDVI values
+    plt.imshow(ndvi, cmap=cmap, vmin=-1, vmax=1)
+
+    # Add color bar
+    cbar = plt.colorbar(label='NDVI')
+    cbar.set_ticks([-1, -0.5, 0, 0.5, 1])
+
+    # Save the visualization image
+    plt.savefig(output_image_path, bbox_inches='tight', pad_inches=0)
+    plt.close()
 
 def calculate_ndvi(red_band_path, nir_band_path, output_ndvi_path):
     """
@@ -9,7 +35,8 @@ def calculate_ndvi(red_band_path, nir_band_path, output_ndvi_path):
     :param red_band_path: Path to the red band image (TIF)
     :param nir_band_path: Path to the near-infrared band image (TIF)
     :param output_ndvi_path: Path to save the NDVI raster file
-    :return: Percentage of total area with vegetation
+    :return: Percentage of total 
+area with vegetation
     """
     with rasterio.open(red_band_path) as red_src:
         red_band = red_src.read(1).astype(np.float32)
