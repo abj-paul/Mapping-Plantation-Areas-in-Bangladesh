@@ -4,6 +4,12 @@ And the temperature is an all time high.
 [[file:res/historical_data_on_dhaka_temperature.jpg]]
 
 * Plan
-[[https://github.com/abj-paul/Mapping-Plantation-Areas-in-Bangladesh.git][We first downloaded satellite data from this open source site.]] We will now estimate ~Normalized Vegetation Index~. Thus we will find areas where we have plantation. Then we will identify areas where we can plant trees.
+[[https://github.com/abj-paul/Mapping-Plantation-Areas-in-Bangladesh.git][We first downloaded satellite data from this open source site.]] After downloading the satellite data, extract them using:
+#+begin_src bash
+  tar -xvf LC09_L2SP_137043_20240402_20240403_02_T1.tar
+#+end_src
+Note that, B4(Band 4) is the red band and B5(Band 5) is the NIR band. We will need them to calculate NDVI.
+
+We will now estimate ~Normalized Difference Vegetation Index (NDVI)~. Thus we will find areas where we have plantation. Then we will identify areas where we can plant trees.
 
 WE ARE ACTIVELY LOOKING FOR COLLABORATION.
