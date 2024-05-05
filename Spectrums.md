@@ -29,3 +29,8 @@ The bands in a Landsat-8 Level-2 Surface Reflectance product contain information
    - It is used for geological mapping, land cover classification, and vegetation health assessment.
 
 These bands provide valuable information for various applications such as agriculture, forestry, environmental monitoring, and urban planning.
+
+
+(file:res/bands.png)[]
+
+So we can see a map view by combining band 2,3,4.

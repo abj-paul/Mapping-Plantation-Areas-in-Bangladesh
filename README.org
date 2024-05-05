@@ -30,3 +30,8 @@ This looks like "Dholair Khal" instead of vegetation, interesting.
 
 
 We basically neet to do ~Landcover mapping~ and ~vegetation index map~, as shown in [[https://www.researchgate.net/publication/319122657_Soil_and_Water_Conservation_Prioritization_Using_Geospatial_Technology_-_a_Case_Study_of_Part_of_Subarnarekha_Basin_Jharkhand_India/figures?lo=1][this paper.]]
+
+** Land Cover Mapping
+Land use land cover (LULC) classification involves categorizing different landscapes based on their unique characteristics, such as vegetation, soil type, topography, and land cover. There are many platforms for land-use classification (ArcGIS Pro, QGIS, etc.). We will now explore them one by one.
+*** QGIS
+[[https://www.youtube.com/watch?v=HKNS-wsc7lo][Video from 3 years ago but it downloads directly from usgs and then work on it]]
