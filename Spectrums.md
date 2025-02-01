@@ -33,4 +33,4 @@ These bands provide valuable information for various applications such as agricu
 
 (file:res/bands.png)[]
 
-So we can see a map view by combining band 2,3,4.
+So we can see a map view by combining band 4,3,2 (R,G,B)

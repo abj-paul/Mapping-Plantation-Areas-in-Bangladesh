@@ -33,5 +33,9 @@ We basically neet to do ~Landcover mapping~ and ~vegetation index map~, as shown
 
 ** Land Cover Mapping
 Land use land cover (LULC) classification involves categorizing different landscapes based on their unique characteristics, such as vegetation, soil type, topography, and land cover. There are many platforms for land-use classification (ArcGIS Pro, QGIS, etc.). We will now explore them one by one.
-*** QGIS
+
 [[https://www.youtube.com/watch?v=HKNS-wsc7lo][Video from 3 years ago but it downloads directly from usgs and then work on it]]
+
+[[https://www.youtube.com/watch?v=6kUeJ6-5Kr4][This tutorial downloads pre-calculated LULC data but it only marks vegetation micro-classes and not urbanization]]
+
+[[https://github.com/Esri/arcgis-python-api/tree/master/samples/04_gis_analysts_data_scientists][This git repository contains a LOT of remote-sensing tasks in colab format]]
